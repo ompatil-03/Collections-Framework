@@ -1,6 +1,6 @@
 package Maps.HashMap;
 
-import javax.xml.stream.events.Characters;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
