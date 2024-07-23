@@ -14,12 +14,12 @@ public class SearchKeyAndValue {
         tm.put(20,"C++");
         tm.put(25,"C");
         System.out.println("TreeMap:"+tm);
-        System.out.println("Enter the key you want to Search:");
-        int a=s.nextInt();
-        System.out.println("Contains: "+tm.containsKey(a));
-        System.out.println("Enter the value you want to search for :");
-        String str=s.next();
-        System.out.println("Contains: "+tm.containsValue(str));
+//        System.out.println("Enter the key you want to Search:");
+//        int a=s.nextInt();
+//        System.out.println("Contains: "+tm.containsKey(a));
+//        System.out.println("Enter the value you want to search for :");
+//        String str=s.next();
+//        System.out.println("Contains: "+tm.containsValue(str));
         System.out.println("key Values :");
         Iterator i=tm.keySet().iterator();
         while (i.hasNext()){
