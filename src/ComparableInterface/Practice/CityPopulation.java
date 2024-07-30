@@ -19,12 +19,16 @@ class City implements Comparable<City>{
         this.population = population;
     }
     @Override
+    public String toString(){
+        return "(City :"+cityName+" --> Population :"+population+")\n";
+    }
+    @Override
     public int compareTo(City o) {
         if (this.population==o.getPopulation()){
             return 0;
         } else if (this.population<o.getPopulation()) {
-            return 1;
-        }else return -1;
+            return -1;
+        }else return 1;
     }
 }
 
@@ -37,16 +41,12 @@ public class CityPopulation {
         al.add(new City("Dubai",84600000));
         al.add(new City("Chennai",12000000));
         System.out.println("List of Cities");
-        print(al);
+        System.out.println(al);
         System.out.println("========================");
-        System.out.println("After Sorting according to population in Descending order:");
+        System.out.println("After Sorting according to population:");
         Collections.sort(al);
-        print(al);
+        System.out.println(al);
 
     }
-    public static void print(ArrayList<City> al){
-        for (City c:al){
-            System.out.println(c.getCityName()+"   "+c.getPopulation());
-        }
-    }
+
 }
