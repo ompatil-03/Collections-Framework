@@ -20,7 +20,7 @@ class Employee {
 class CompareSalary implements Comparator<Employee>{
     @Override
     public int compare(Employee o1, Employee o2) {
-        return Integer.compare(o1.salary,o2.salary);
+        return Integer.compare(o2.salary,o1.salary);
     }
 }
 public class ComparatorEmployee {
